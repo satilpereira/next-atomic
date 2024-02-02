@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/darch-development/next-atomic.git"
+    "url": "git+https://github.com/satilpereira/next-atomic.git"
   },
   "keywords": [
     "bootstrap",
@@ -26,9 +26,9 @@
   },
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/darch-development/next-atomic/issues"
+    "url": "https://github.com/satilpereira/next-atomic/issues"
   },
-  "homepage": "https://github.com/darch-development/next-atomic#readme",
+  "homepage": "https://github.com/satilpereira/next-atomic#readme",
   "dependencies": {
     "commander": "^11.1.0",
     "execa": "^8.0.1",
