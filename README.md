@@ -1,7 +1,7 @@
 # Next atomic
 
 ## Description
-[Next atomic]('README.md') is a Next.js boilerplate code generator that sets up a project using the atomic design pattern for React components. It provides a structured organization for components and includes useful folder configurations for a Next.js application.
+[Next atomic]('[README.md](https://github.com/satilpereira/next-atomic#readme)') is a Next.js boilerplate code generator that sets up a project using the atomic design pattern for React components. It provides a structured organization for components and includes useful folder configurations for a Next.js application.
 
 
 ## Installation
@@ -54,7 +54,7 @@ The folder structure is based on the atomic design pattern and includes the foll
 This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
 
 ## Author
-[Satil Pereira]('')
+[Satil Pereira]()
 
 ## Issues
 If you encounter any issues, please report them in the [Issues](https://github.com/satilpereira/next-atomic/issues)
