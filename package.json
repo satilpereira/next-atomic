@@ -1,0 +1,40 @@
+{
+  "name": "next-atomic",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Next boilerplate code usng atomic react structure",
+  "main": "runner.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darch-development/next-atomic.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "boilerplate",
+    "nextjs",
+    "typescript",
+    "node",
+    "frontend"
+  ],
+  "author": {
+    "name": "Satil Pereira",
+    "email": "satil@darch.dev",
+    "url": "https://satil.dev"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/darch-development/next-atomic/issues"
+  },
+  "homepage": "https://github.com/darch-development/next-atomic#readme",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "execa": "^8.0.1",
+    "ncp": "^2.0.0"
+  },
+  "bin": {
+    "next-atomic": "runner.js"
+  }
+}
