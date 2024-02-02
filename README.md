@@ -1,4 +1,8 @@
 # Next atomic
+<span class="badge-npmdownloads"><a href="https://npmjs.org/package/next-atomic" title="View this project on NPM"><img src="https://img.shields.io/npm/dt/next-atomic" alt="NPM downloads" /></a></span>
+<span class="badge-npmversion"><a href="https://npmjs.org/package/next-atomic" title="View this project on NPM"><img src="https://img.shields.io/npm/v/next-atomic" alt="NPM version" /></a></span>
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 
 ## Description
 [Next atomic]('[README.md](https://github.com/satilpereira/next-atomic#readme)') is a Next.js boilerplate code generator that sets up a project using the atomic design pattern for React components. It provides a structured organization for components and includes useful folder configurations for a Next.js application.
@@ -54,7 +58,7 @@ The folder structure is based on the atomic design pattern and includes the foll
 This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
 
 ## Author
-[Satil Pereira]()
+[Satil Pereira](https://github.com/satilpereira)
 
 ## Issues
 If you encounter any issues, please report them in the [Issues](https://github.com/satilpereira/next-atomic/issues)
