@@ -16,7 +16,7 @@ const ncpAsync = promisify(ncp);
 const execAsync = promisify(exec);
 
 program
-  .version("1.0.6")
+  .version("1.0.10")
   .command("create [projectName]")
   .description(
     "Create a new application in the specified directory or the current directory if not provided"
@@ -42,14 +42,10 @@ program
         chalk.green(
         "✓ Application files copied successfully!"));
 
-      // Check if .gitignore exists in the src directory
-      const gitignorePath = path.join(sourcePath, ".gitignore");
-      if (fs.existsSync(gitignorePath)) {
-        // Copy .gitignore to the destination directory
-        const destGitignorePath = path.join(destinationPath, ".gitignore");
-        await ncpAsync(gitignorePath, destGitignorePath);
-      }
-
+      // Rename .npmignore to .gitignore
+      const npmignorePath = path.join(destinationPath, ".npmignore");
+      const gitignorePath = path.join(destinationPath, ".gitignore");
+      await fs.promises.rename(npmignorePath, gitignorePath);
 
       // Change the working directory to the destination path
       process.chdir(destinationPath);
