@@ -1,9 +1,13 @@
 {
   "name": "next-atomic",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "module",
   "description": "Next boilerplate code usng atomic react structure",
   "main": "runner.js",
+  "files": [
+    "src",
+    ".gitignore"
+  ],
   "scripts": {
     "test": "jest"
   },
