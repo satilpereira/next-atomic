@@ -1,6 +1,6 @@
 {
   "name": "next-atomic",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "description": "Next boilerplate code usng atomic react structure",
   "main": "runner.js",
@@ -30,6 +30,8 @@
   },
   "homepage": "https://github.com/satilpereira/next-atomic#readme",
   "dependencies": {
+    "chalk": "^5.3.0",
+    "cli-spinner": "^0.2.10",
     "commander": "^11.1.0",
     "execa": "^8.0.1",
     "ncp": "^2.0.0"
