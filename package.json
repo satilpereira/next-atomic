@@ -36,9 +36,11 @@
   "dependencies": {
     "chalk": "^5.3.0",
     "cli-spinner": "^0.2.10",
+    "clsx": "^2.1.0",
     "commander": "^11.1.0",
     "execa": "^8.0.1",
-    "ncp": "^2.0.0"
+    "ncp": "^2.0.0",
+    "tailwind-merge": "^2.2.1"
   },
   "bin": {
     "next-atomic": "runner.js"

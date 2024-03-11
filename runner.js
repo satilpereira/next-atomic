@@ -16,7 +16,7 @@ const ncpAsync = promisify(ncp);
 const execAsync = promisify(exec);
 
 program
-  .version("1.0.10")
+  .version("1.0.11")
   .command("create [projectName]")
   .description(
     "Create a new application in the specified directory or the current directory if not provided"
