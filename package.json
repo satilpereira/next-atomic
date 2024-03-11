@@ -1,6 +1,6 @@
 {
   "name": "next-atomic",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "type": "module",
   "description": "Next boilerplate code usng atomic react structure",
   "main": "runner.js",
