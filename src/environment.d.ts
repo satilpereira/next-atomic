@@ -4,10 +4,12 @@ declare global {
       NODE_ENV: 'development' | 'production' | 'test'
       NEXT_PUBLIC_API_URL_DEVELOPMENT: string
       NEXT_PUBLIC_API_URL_PRODUCTION: string
-      NEXT_PUBLIC_CLIENT_URL: string
+      NEXT_PUBLIC_CLIENT_URL_PRODUCTION: string
+      NEXT_PUBLIC_CLIENT_URL_DEVELOPMENT: string
+      NEXTAUTH_URL: string
       NEXTAUTH_SECRET: string
-      // GOOGLE_CLIENT_ID: string
-      // GOOGLE_CLIENT_SECRET: string
+      GOOGLE_CLIENT_ID: string
+      GOOGLE_CLIENT_SECRET: string
     }
   }
 }
