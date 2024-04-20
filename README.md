@@ -67,5 +67,12 @@ Encountering any issues? Report them on the [Github Issues](https://github.com/s
 ## 📝 Author
 - [Satil Pereira](https://github.com/satilpereira)
 
+## What to expect in the near future?
+This project is mainly aimed for my own personal projects. But I find it frustating setting up authentication, payment gateways such as stripe, Structuring project, and so on. So, I'll be setting up all the boilerplate code in this next app boilerplate, so you can just npm install and use them as you wish.  
+- [ ] Setup theme toggling provider
+- [ ] Setup cookies management
+- [ ] Setup Credentials providers
+- [ ] Setup email sending function
+
 ---
 Feel free to further customize the content or let me know if you have specific elements you'd like to emphasize! I'm happy to help. 😊
