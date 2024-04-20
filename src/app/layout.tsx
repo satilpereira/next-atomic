@@ -1,7 +1,9 @@
 import '@styles/globals.css'
 import { GeistSans } from 'geist/font/sans'
 import cn from '@utils/cn'
-import Image from 'next/image'
+import ThemeProvider from '@contexts/ThemeProvider'
+import Navbar from '@components/organisms/Navbar'
+import { cookies } from 'next/headers'
 
 // The metadata object contains the information about the website
 // and helps to set the title, description, and favicon of the website.
@@ -34,20 +36,25 @@ export const metadata = {
 
 // The Layout component is a wrapper component that wraps the entire website.
 const Layout = ({ children }: { children: React.ReactNode }) => {
+  const cookieStore = cookies()
+  const theme = cookieStore.get('theme')
   return (
     <html
       lang='pt-BR'
       className={cn(GeistSans.className, {
-        dark: true,
+        dark: theme?.value === 'dark',
       })}
     >
-      <body
-        className={cn(
-          'flex min-h-[100svh] w-full items-center justify-center bg-slate-200 text-slate-950 dark:bg-zinc-900 dark:text-slate-300',
-        )}
-      >
-        <main className='flex items-center justify-center'>{children}</main>
-      </body>
+      <ThemeProvider>
+        <body
+          className={cn(
+            'min-h-[100svh] bg-zinc-200 text-zinc-950 dark:bg-zinc-900 dark:text-zinc-300',
+          )}
+        >
+          <Navbar />
+          <main className='flex items-center justify-center'>{children}</main>
+        </body>
+      </ThemeProvider>
     </html>
   )
 }
