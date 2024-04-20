@@ -69,7 +69,7 @@ Encountering any issues? Report them on the [Github Issues](https://github.com/s
 
 ## What to expect in the near future?
 This project is mainly aimed for my own personal projects. But I find it frustating setting up authentication, payment gateways such as stripe, Structuring project, and so on. So, I'll be setting up all the boilerplate code in this next app boilerplate, so you can just npm install and use them as you wish.  
-- [ ] Setup theme toggling provider
+- [x] Setup theme toggling provider
 - [ ] Setup cookies management
 - [ ] Setup Credentials providers
 - [ ] Setup email sending function
