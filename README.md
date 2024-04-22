@@ -21,7 +21,7 @@
 
 ## 🚀 Quick Start
 
-Install next-atomic globally and create your project:
+Next atomic works on top of create-next-app, but it comes with presets for typescript, tailwind, and some configurations already made for you. You can change it later. Install next-atomic globally and create your project:
 
 ```bash
 npm install -g next-atomic

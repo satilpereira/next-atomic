@@ -34,13 +34,17 @@ export const metadata = {
     "This is a Next.js starter with atomic design. It's a great way to start a new project with a solid foundation. It's also a great way to learn how to use atomic design with Next.js using TypeScript and Tailwind CSS.",
 }
 
-// The Layout component is a wrapper component that wraps the entire website.
+/**
+  The Layout component is a wrapper component that wraps the entire website.
+  It contains the Navbar component and the main content of the website.
+  */
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const cookieStore = cookies()
   const theme = cookieStore.get('theme')
+
   return (
     <html
-      lang='pt-BR'
+      lang='en-US'
       className={cn(GeistSans.className, {
         dark: theme?.value === 'dark',
       })}
