@@ -1,16 +1,14 @@
 {
   "name": "next-atomic",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "module",
-  "description": "Next boilerplate code usng atomic react structure",
+  "description": "Nextjs boilerplate code using atomic design structure, typescript, and tailwindcss. Already configured with shadcn/ui, and theme toggler.",
   "main": "runner.js",
   "files": [
     "src",
     "src/.gitignore"
   ],
-  "scripts": {
-    "test": "jest"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/satilpereira/next-atomic.git"
@@ -20,6 +18,8 @@
     "boilerplate",
     "nextjs",
     "typescript",
+    "react",
+    "shadcn",
     "node",
     "frontend"
   ],

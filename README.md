@@ -1,15 +1,26 @@
 # Next atomic
+
 <span class="badge-npmdownloads"><a href="https://npmjs.org/package/next-atomic" title="View this project on NPM"><img src="https://img.shields.io/npm/dt/next-atomic" alt="NPM downloads" /></a></span>
 <span class="badge-npmversion"><a href="https://npmjs.org/package/next-atomic" title="View this project on NPM"><img src="https://img.shields.io/npm/v/next-atomic" alt="NPM version" /></a></span>
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
+[![Socket Badge](https://socket.dev/api/badge/npm/package/next-atomic)](https://socket.dev/npm/package/next-atomic)
 
 ## Elevate Your Next.js Experience with next-atomic!
 
 [next-atomic]('[README.md](https://github.com/satilpereira/next-atomic#readme)') is not just a boilerplate, it's your launchpad into the future of Next.js development. Unleash the power of atomic design patterns for React components and effortlessly organize your project for success.
 
+## 🎨 Features
+
+- **Atomic Design Structure**: Organize your components into atoms, molecules, organisms, templates, and pages.
+- **Next.js API Routes**: Create API routes for your Next.js app.
+- **TypeScript**: Utilize TypeScript for type-safe development.
+- **Tailwind CSS**: Utilize the power of Tailwind CSS for styling.
+- **Shadcn/ui**: Already integrated with shadcn/ui for faster and clean ui development.
+- **Dark Mode**: Toggle between light and dark mode with ease.
+
 
 ## 🚀 Quick Start
+
 Install next-atomic globally and create your project:
 
 ```bash
