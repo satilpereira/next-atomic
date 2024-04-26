@@ -14,7 +14,7 @@ import readThemeCookie from '@actions/cookies/theme/readThemeCookie'
 /**
  * The available themes for the application.
  */
-type Theme = 'light' | 'dark'
+type Theme = 'light' | 'dark' | 'system'
 
 /**
  * The type definition for the ThemeContext.
@@ -47,6 +47,21 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
    */
   const toggleTheme = () => {
     const toggleAsync = async () => {
+      if (theme === 'system') {
+        const userPrefersDark = window.matchMedia(
+          '(prefers-color-scheme: dark)',
+        ).matches
+
+        if (userPrefersDark) {
+          setTheme('light')
+          await createThemeCookie('light')
+        } else {
+          setTheme('dark')
+          await createThemeCookie('dark')
+        }
+        return
+      }
+
       const newTheme = theme === 'light' ? 'dark' : 'light'
       setTheme(newTheme)
       createThemeCookie(newTheme)
@@ -61,8 +76,33 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
 
   useEffect(() => {
     const getTheme = async () => {
-      const theme = await readThemeCookie()
-      setTheme(theme)
+      const userPrefersDark = window.matchMedia(
+        '(prefers-color-scheme: dark)',
+      ).matches
+
+      if (theme === 'system') {
+        if (userPrefersDark) {
+          setTheme('dark')
+        } else {
+          setTheme('light')
+        }
+        return
+      }
+
+      const storedTheme = await readThemeCookie()
+
+      if (!storedTheme) {
+        if (userPrefersDark) {
+          setTheme('dark')
+          await createThemeCookie('dark')
+        } else {
+          setTheme('light')
+          await createThemeCookie('light')
+        }
+        return
+      }
+
+      setTheme(storedTheme)
     }
 
     getTheme()

@@ -13,9 +13,9 @@ const readThemeCookie = async () => {
   const cookieStore = cookies()
   const themeCookie = cookieStore.get('theme')
   if (!themeCookie) {
-    return 'dark'
+    return null
   }
-  const theme = themeCookie.value as 'light' | 'dark'
+  const theme = themeCookie.value as 'light' | 'dark' | 'system'
 
   return theme
 }
