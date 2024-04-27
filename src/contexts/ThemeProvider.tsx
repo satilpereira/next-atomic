@@ -44,6 +44,10 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
 
   /**
    * Toggles the theme between light and dark.
+   * TODO: Add system theme support.
+   * @example
+   * const { toggleTheme } = useTheme()
+   * toggleTheme()
    */
   const toggleTheme = () => {
     const toggleAsync = async () => {
@@ -74,6 +78,7 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     toggleAsync()
   }
 
+  // Set the theme based on the user's preference or the stored theme.
   useEffect(() => {
     const getTheme = async () => {
       const userPrefersDark = window.matchMedia(

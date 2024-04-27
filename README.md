@@ -1,4 +1,4 @@
-# Next atomic
+# Next atomic (beta)
 
 <span class="badge-npmdownloads"><a href="https://npmjs.org/package/next-atomic" title="View this project on NPM"><img src="https://img.shields.io/npm/dt/next-atomic" alt="NPM downloads" /></a></span>
 <span class="badge-npmversion"><a href="https://npmjs.org/package/next-atomic" title="View this project on NPM"><img src="https://img.shields.io/npm/v/next-atomic" alt="NPM version" /></a></span>
@@ -16,7 +16,7 @@
 - **TypeScript**: Utilize TypeScript for type-safe development.
 - **Tailwind CSS**: Utilize the power of Tailwind CSS for styling.
 - **Shadcn/ui**: Already integrated with shadcn/ui for faster and clean ui development.
-- **Dark Mode**: Toggle between light and dark mode with ease.
+- **Dark Mode**: Toggle between light and dark mode with ease or use the systems default.
 
 
 ## 🚀 Quick Start
