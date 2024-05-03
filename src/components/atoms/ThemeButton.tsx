@@ -1,12 +1,12 @@
 'use client'
 
 import React, { ReactNode } from 'react'
-import { Button } from '@components/ui/button'
+import { Button, ButtonProps } from '@components/ui/button'
 import { useTheme } from '@contexts/ThemeProvider'
 
 type ThemeButtonProps = {
   children: ReactNode
-} & React.ButtonHTMLAttributes<HTMLButtonElement>
+} & ButtonProps
 
 /**
  * The ThemeButton component is a button that toggles the theme between light and dark.
