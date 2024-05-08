@@ -7,6 +7,8 @@ const Navbar = () => {
   return (
     <nav className='flex items-center justify-between border-b border-zinc-300 p-4 dark:border-zinc-800'>
       <Link
+        aria-label='Home Button'
+        aria-current='page'
         className='rounded-md transition-all hover:bg-zinc-300 dark:brightness-0 dark:invert dark:hover:brightness-50'
         href={'/'}
       >
