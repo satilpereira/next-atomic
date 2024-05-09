@@ -1,9 +1,10 @@
 import '@styles/globals.css'
 import { GeistSans } from 'geist/font/sans'
 import cn from '@utils/cn'
-import ThemeProvider from '@contexts/ThemeProvider'
+import ThemeProvider from '@contexts/ThemeProvider.client'
 import Navbar from '@components/organisms/Navbar'
 import { cookies } from 'next/headers'
+import SessionProvider from '@components/providers/SessionProvider.server'
 
 // The metadata object contains the information about the website
 // and helps to set the title, description, and favicon of the website.
@@ -50,14 +51,16 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       })}
     >
       <ThemeProvider>
-        <body
-          className={cn(
-            'min-h-[100svh] bg-zinc-200 text-zinc-950 dark:bg-zinc-900 dark:text-zinc-300',
-          )}
-        >
-          <Navbar />
-          <main className='flex items-center justify-center'>{children}</main>
-        </body>
+        <SessionProvider>
+          <body
+            className={cn(
+              'min-h-[100svh] bg-zinc-200 text-zinc-950 dark:bg-zinc-900 dark:text-zinc-300',
+            )}
+          >
+            <Navbar />
+            <main className='flex items-center justify-center'>{children}</main>
+          </body>
+        </SessionProvider>
       </ThemeProvider>
     </html>
   )

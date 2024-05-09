@@ -2,7 +2,7 @@
 
 import React, { ReactNode } from 'react'
 import { Button, ButtonProps } from '@components/ui/button'
-import { useTheme } from '@contexts/ThemeProvider'
+import { useTheme } from '@contexts/ThemeProvider.client'
 
 type ThemeButtonProps = {
   children: ReactNode
