@@ -1,7 +1,8 @@
 import { SessionProvider as NaSessionProvider } from 'next-auth/react'
 import { BASE_PATH, auth } from '@app/auth'
+import AuthButtonClient from './AuthButton.client'
 
-const SessionProvider = async ({ children }: { children: React.ReactNode }) => {
+const AuthButton = async () => {
   const session = await auth()
   if (session && session.user) {
     session.user = {
@@ -12,9 +13,9 @@ const SessionProvider = async ({ children }: { children: React.ReactNode }) => {
   }
   return (
     <NaSessionProvider basePath={BASE_PATH} session={session}>
-      {children}
+      <AuthButtonClient />
     </NaSessionProvider>
   )
 }
 
-export default SessionProvider
+export default AuthButton

@@ -2,7 +2,7 @@ import ThemeButton from '@components/atoms/ThemeButton'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import AuthButton from '@components/atoms/AuthButton.client'
+import AuthButton from '@components/atoms/AuthButton'
 
 const Navbar = () => {
   return (
