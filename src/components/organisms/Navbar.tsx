@@ -4,7 +4,30 @@ import Image from 'next/image'
 import Link from 'next/link'
 import AuthButton from '@components/atoms/AuthButton'
 
-const Navbar = () => {
+type NavItemsProps = {
+  label: string
+  href: string
+}
+
+const navItems: NavItemsProps[] = [
+  { label: 'Home', href: '/' },
+  { label: 'Protected', href: '/protected' },
+  { label: 'Sensible', href: '/sensible' },
+]
+
+const NavItems: React.FC<{ navItems: NavItemsProps[] }> = ({ navItems }) => {
+  return (
+    <ul className='flex flex-row gap-4'>
+      {navItems.map(navItem => (
+        <li key={navItem.label}>
+          <Link href={navItem.href}>{navItem.label}</Link>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+const Navbar: React.FC<{}> = () => {
   return (
     <nav className='flex items-center justify-between border-b border-zinc-300 p-4 dark:border-zinc-800'>
       <Link
@@ -22,8 +45,11 @@ const Navbar = () => {
           priority
         />
       </Link>
-      <AuthButton />
-      <ThemeButton variant={'default'}>Toggle Theme</ThemeButton>
+      {/* <NavItems navItems={navItems} /> */}
+      <div className='flex flex-row gap-4'>
+        <AuthButton />
+        <ThemeButton variant={'default'}>Toggle Theme</ThemeButton>
+      </div>
     </nav>
   )
 }
