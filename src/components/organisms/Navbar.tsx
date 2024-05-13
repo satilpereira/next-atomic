@@ -8,7 +8,7 @@ import NavItems, { navItems } from '@components/atoms/NavItems'
 const Navbar: React.FC<{}> = () => {
   return (
     <nav className='flex items-center justify-between border-b border-zinc-300 p-4 dark:border-zinc-800'>
-      <div className='flex flex-row items-center gap-4'>
+      <div className='flex flex-row items-center gap-4 max-md:hidden'>
         <Link
           aria-label='Home Button'
           aria-current='page'
@@ -26,7 +26,7 @@ const Navbar: React.FC<{}> = () => {
         </Link>
         <NavItems navItems={navItems} />
       </div>
-      <div className='flex flex-row gap-4'>
+      <div className='flex flex-row gap-4 max-md:hidden'>
         <AuthButton />
         <ThemeButton variant={'default'}>Toggle Theme</ThemeButton>
       </div>
