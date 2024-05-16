@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 import { auth, BASE_PATH } from '@app/auth'
 
 export const config = {
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
+  matcher: ['/protected/:path*', '/secure/:path*'],
 }
 
 export default auth(req => {

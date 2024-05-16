@@ -52,7 +52,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <ThemeProvider>
         <body
           className={cn(
-            'min-h-[100svh] bg-zinc-200 text-zinc-950 dark:bg-zinc-900 dark:text-zinc-300',
+            'min-h-[100svh] bg-white text-zinc-950 dark:bg-zinc-950 dark:text-zinc-300',
           )}
         >
           <Navbar />

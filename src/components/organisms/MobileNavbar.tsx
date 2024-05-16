@@ -1,17 +1,11 @@
 import { Button } from '@/components/ui/button'
-import { Cloud, Github, LifeBuoy, LogOut, Moon, Sun, User } from 'lucide-react'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
-  DropdownMenuPortal,
   DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { NavItemsProps } from '@components/atoms/NavItems'
@@ -27,7 +21,7 @@ const MobileNavbar: React.FC<{ navItems: NavItemsProps[] }> = ({
       <DropdownMenuTrigger asChild>
         <Button variant='outline'>Open</Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className='w-56'>
+      <DropdownMenuContent align='end' className='w-56'>
         <DropdownMenuLabel>My Account</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
