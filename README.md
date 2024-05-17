@@ -17,6 +17,7 @@
 - **Tailwind CSS**: Utilize the power of Tailwind CSS for styling.
 - **Shadcn/ui**: Already integrated with shadcn/ui for faster and clean ui development.
 - **Dark Mode**: Toggle between light and dark mode with ease or use the systems default.
+- **Authentication**: Comes with a ready-to-use GitHub authentication provider. Just set your credentials and you're good to go.
 
 
 ## 🚀 Quick Start
@@ -82,7 +83,7 @@ Encountering any issues? Report them on the [Github Issues](https://github.com/s
 This project is mainly aimed for my own personal projects. But I find it frustating setting up authentication, payment gateways such as stripe, Structuring project, and so on. So, I'll be setting up all the boilerplate code in this next app boilerplate, so you can just npm install and use them as you wish.  
 - [x] Setup theme toggling provider
 - [ ] Setup cookies management
-- [ ] Setup Credentials providers
+- [x] Setup Credentials providers
 - [ ] Setup email sending function
 
 ---
