@@ -8,8 +8,8 @@ import {
   ReactNode,
 } from 'react'
 
-import createThemeCookie from '@app/actions/cookies/theme/createThemeCookie'
-import readThemeCookie from '@app/actions/cookies/theme/readThemeCookie'
+import createThemeCookie from '@actions/cookies/theme/createThemeCookie'
+import readThemeCookie from '@actions/cookies/theme/readThemeCookie'
 
 /**
  * The available themes for the application.

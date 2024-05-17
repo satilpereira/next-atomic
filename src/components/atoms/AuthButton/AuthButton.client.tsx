@@ -4,20 +4,25 @@ import { useSession } from 'next-auth/react'
 
 import { Button } from '@components/ui/button'
 
-import { signIn, signOut } from '@app/auth/helpers'
+import { signIn, signOut } from '@actions/auth/helpers'
 
 import { FaGithub } from 'react-icons/fa6'
 import { FaArrowRightFromBracket } from 'react-icons/fa6'
+import { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 
 const AuthButton = () => {
-  const { data: session } = useSession()
+  const session = useSession()
+  const router = useRouter()
 
   return (
     <div>
-      {session ? (
+      {session.status == 'authenticated' ? (
         <Button
           onClick={async () => {
             await signOut()
+            window.location.reload()
+            router.refresh()
           }}
           className='flex flex-row gap-2'
         >

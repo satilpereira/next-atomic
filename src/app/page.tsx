@@ -1,4 +1,6 @@
 import cn from '@utils/cn'
+import WhoAmI from '@components/atoms/WhoAmI'
+import { Suspense } from 'react'
 
 const page = () => {
   return (
@@ -7,6 +9,15 @@ const page = () => {
         Get started by editing <code className='italic'>app/page.tsx</code> or{' '}
         <code className='italic'>app/layout.tsx</code>
       </div>
+      <Suspense
+        fallback={
+          <div className={cn('text-center', 'text-2xl', 'font-bold')}>
+            Loading...
+          </div>
+        }
+      >
+        <WhoAmI />
+      </Suspense>
     </div>
   )
 }

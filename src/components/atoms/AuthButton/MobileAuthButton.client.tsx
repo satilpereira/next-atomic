@@ -4,7 +4,7 @@ import { useSession } from 'next-auth/react'
 
 import { Button } from '@components/ui/button'
 
-import { signIn, signOut } from '@app/auth/helpers'
+import { signIn, signOut } from '@actions/auth/helpers'
 
 import { FaGithub } from 'react-icons/fa6'
 
