@@ -1,6 +1,6 @@
 {
   "name": "next-atomic",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "type": "module",
   "description": "Nextjs boilerplate code using atomic design structure, typescript, and tailwindcss. Already configured with shadcn/ui, and theme toggler.",
   "main": "runner.js",
