@@ -28,6 +28,8 @@ Next atomic works on top of create-next-app, but it comes with presets for types
 npm install -g next-atomic
 ```
 
+
+
 ## 🚦 Usage
 
 Generate a new application effortlessly:
@@ -78,6 +80,10 @@ Encountering any issues? Report them on the [Github Issues](https://github.com/s
 
 ## 📝 Author
 - [Satil Pereira](https://github.com/satilpereira)
+
+<!-- Contriutors -->
+## 🙏 Contributors
+- [Satil Pereira](https://github.com/satileira)
 
 ## What to expect in the near future?
 This project is mainly aimed for my own personal projects. But I find it frustating setting up authentication, payment gateways such as stripe, Structuring project, and so on. So, I'll be setting up all the boilerplate code in this next app boilerplate, so you can just npm install and use them as you wish.  
