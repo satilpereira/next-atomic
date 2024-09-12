@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "release": "release-it"
+    "release": "dotenv release-it --"
   },
   "dependencies": {
     "@commitlint/cli": "^19.5.0",
